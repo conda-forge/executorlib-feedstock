@@ -1,5 +1,5 @@
 {% set name = "executorlib" %}
-{% set version = "0.0.3" %}
+{% set version = "0.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/executorlib-{{ version }}.tar.gz
-  sha256: 9cd753bbb4d9f9db1464b225289a9b019fe97f94d6a44682da3a62d70fc58b84
+  sha256: 350d25ea09cbd50e5ba537684c8a69fde87930e3984add7e36dfa657bd66f4ef
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
     - pip
   run:
     - python >=3.9,<3.13
-    - cloudpickle >=2.0.0,<=3.0.0
+    - cloudpickle >=2.0.0,<=3.1.0
     - pyzmq >=25.0.0,<=26.2.0
 
 test:
