@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -23,7 +23,7 @@ requirements:
     - versioneer ==0.29
     - pip
   run:
-    - python >={{ python_min }},<3.13
+    - python >={{ python_min }}
     - cloudpickle >=2.0.0,<=3.1.0
     - pyzmq >=25.0.0,<=26.2.0
 
