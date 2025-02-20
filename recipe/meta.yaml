@@ -1,5 +1,5 @@
 {% set name = "executorlib" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/executorlib-{{ version }}.tar.gz
-  sha256: 0f8a09b0b1d79e1caa370cd0c70748b7b690aead881d5847080070da47121cf3
+  sha256: ef2cc0f18eb5327477f0b7784c4c6cecd2c5cafe4ead3587ab1f176d73265037
 
 build:
   noarch: python
