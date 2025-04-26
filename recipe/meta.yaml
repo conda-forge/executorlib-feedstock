@@ -8,6 +8,8 @@ package:
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/executorlib-{{ version }}.tar.gz
   sha256: 1aaf1eea314973d3d9a19f46446fa49d8fffefe7cb62a53eaa3cef40600c6832
+  patches:
+    - numpy.patch
 
 build:
   noarch: python
