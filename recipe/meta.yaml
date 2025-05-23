@@ -19,8 +19,7 @@ requirements:
     - python {{ python_min }}
     - cloudpickle
     - pyzmq
-    - setuptools
-    - versioneer ==0.29
+    - hatchling
     - pip
   run:
     - python >={{ python_min }}
