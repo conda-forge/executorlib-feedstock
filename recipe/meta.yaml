@@ -20,6 +20,7 @@ requirements:
     - cloudpickle
     - pyzmq
     - hatchling
+    - hatch-vcs
     - pip
   run:
     - python >={{ python_min }}
