@@ -3,7 +3,6 @@ schema_version: 1
 context:
   name: executorlib
   version: "1.7.2"
-  python_min: 3.10
 
 package:
   name: ${{ name|lower }}
