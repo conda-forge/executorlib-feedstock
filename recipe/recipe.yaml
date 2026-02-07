@@ -11,8 +11,6 @@ package:
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/executorlib-${{ version }}.tar.gz
   sha256: 755b5dcc8f1c20eef524a9f4f9a5245481080bf84889209b2ad496fb522fc992
-  patches:
-    - numpy.patch
 
 build:
   number: 0
