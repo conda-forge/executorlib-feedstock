@@ -11,9 +11,11 @@ package:
 source:
   url: https://files.pythonhosted.org/packages/13/fc/8db53bd958cc6acd8cdd6bf569b4ba78d51e345ea0bcdb9476d984822295/executorlib-${{ version }}.tar.gz
   sha256: 1cdaa8e855b69dfb363716637e1cbbeaed2632e0806f2b812bf4494fb8133bb6
+  patches:
+    - getitem.patch
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
