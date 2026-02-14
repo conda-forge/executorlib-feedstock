@@ -9,7 +9,7 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/13/fc/8db53bd958cc6acd8cdd6bf569b4ba78d51e345ea0bcdb9476d984822295/executorlib-${{ version }}.tar.gz
+  url: url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/executorlib-${{ version }}.tar.gz
   sha256: a9062d5d23fb16980cb3d922378d234deb6db0ea912222f8165d7cacdcbec4e7
 
 build:
