@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: executorlib
-  version: "1.9.0"
+  version: "1.9.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/executorlib-${{ version }}.tar.gz
-  sha256: 94e5dcb40aac68a91e76d9e982ceab61c991da0a8e205e5385150923a96f922b
+  sha256: 73ec553731d53fde474f898f2cf9d1ab6f98237d871e41b2011519462261e150
 
 build:
   number: 0
