@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: executorlib
-  version: "1.10.2"
+  version: "1.10.3"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/executorlib-${{ version }}.tar.gz
-  sha256: 24bd55625bba81f782a3a5ff41df9f94a103ce35edb99cea3cf4979dc7db1103
+  sha256: be98caf0c0dc7a1a6c27b30f518f81feaf65029caf130e4a62b94abc3abea1de
 
 build:
   number: 0
@@ -35,8 +35,10 @@ tests:
       imports:
         - executorlib
       pip_check: true
+      python_version:
+        - ${{ python_min }}
+        - "*"
 
-      python_version: ${{ python_min }}.*
 about:
   summary: Scale serial and MPI-parallel python functions over hundreds of compute nodes all from within a jupyter notebook or serial python process.
   license: BSD-3-Clause
