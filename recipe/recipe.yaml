@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: executorlib
-  version: "1.10.3"
+  version: 1.10.4
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/executorlib-${{ version }}.tar.gz
-  sha256: be98caf0c0dc7a1a6c27b30f518f81feaf65029caf130e4a62b94abc3abea1de
+  sha256: cbd50ba08d9bd57957597e7c04df89e9a76c1bb15078f36679876c2af9bcbc44
 
 build:
   number: 0
@@ -28,8 +28,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - cloudpickle >=2.0.0,<=3.1.2
-    - pyzmq >=25.0.0,<=27.1.0
-
+    - pyzmq >=25.0.0,<=27.2.0
 tests:
   - python:
       imports:
@@ -37,7 +36,7 @@ tests:
       pip_check: true
       python_version:
         - ${{ python_min }}
-        - "*"
+        - '*'
 
 about:
   summary: Scale serial and MPI-parallel python functions over hundreds of compute nodes all from within a jupyter notebook or serial python process.
