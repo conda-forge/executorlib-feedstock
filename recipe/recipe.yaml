@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: executorlib
-  version: 1.11.0
+  version: 1.11.1
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/executorlib-${{ version }}.tar.gz
-  sha256: b69b9cb6533cb2acb8be846179d0638ce4c1119ece1ced4747ebdc072f85d86e
+  sha256: f8b264554a6e90f073d7aa4dea8190602a541e40100d39ea638a12bdf49cf05e
 
 build:
   number: 0
@@ -27,8 +27,8 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - cloudpickle >=2.0.0,<3.2.0
-    - pyzmq >=25.0.0,<27.3.0
+    - cloudpickle >=2.2.1,<3.2.0
+    - pyzmq >=25.1.2,<27.4.0
 tests:
   - python:
       imports:
